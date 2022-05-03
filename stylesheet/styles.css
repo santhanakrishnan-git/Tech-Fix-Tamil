@@ -1,21 +1,10 @@
-/* For Mobile Phones */
-[class*="col-"]{
-	width:100%;
-}
-@media only screen and (min-width:768px){
-/* For Desktop */
-.col-1{width:8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25%;}
-.col4{width: 33.33%;}
-.col5{width: 41.66%;}
-.col6{width: 50%;}
-.col7{width: 58.33%;}
-.col8{width: 66.66%;}
-.col9{width: 75%;}
-.col10{width: 83.33%;}
-.col11{width: 91.66%;}
-.col12{width: 100%;}
+@media only screen and (max-width:767px){
+	.nav a {
+		height:20px;
+		flex-direction: column;
+		text-align: center;
+		
+	}
 }
 .nav{
 	background: lightblue url("pic.jpg") no-repeat fixed center; 
@@ -23,19 +12,19 @@
 	border-radius:10px;
 }
 .nav a {
-	float:center;
-	width:24%;
 	text-decoration:none;
-	display:inline-block;
-	padding: 15px 5px;
+	display:flex;
+	padding: 15px;
 	font-size:25px;
-	font-family:Serif;
-	text-align:center;	
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	justify-content:center;
+	list-style: none;	
 }
 
 .nav a:hover{
 	background-color:aquamarine;
 	color:black;
+	transition: 0.9s;
 	border-radius:10px;
 }
 .nav a.active{
@@ -93,7 +82,7 @@
 
 
 #c1{
-	font-family:Palatino;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	text-align:center;
 	color:black;
 	padding:18px 18px;
@@ -108,6 +97,7 @@
 	border-radius:20px;
 	padding:18px 18px;
 	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		
 }
 .para2{
@@ -139,7 +129,7 @@ hr.new1 {
 	border: 1px solid rgb(0, 0, 0);
   }
 #c2{
-	font-family:Palatino;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	text-align:center;
 	color:black;
 	padding:18px 18px;
